@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+   font-family: Arial, sans-serif;
+
+}
+body{
+    min-height: 100vh; 
+     /* ####### min-height: 100vh; content: center;####### */
+    line-height: 30px;
+    color: red;
+    background:linear-gradient(45deg, red,purple, orange, green,purple) ;
+   
+}
+ul li{
+    list-style: none;
+  
+  
+}
+body,.quaiz-section{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+ .quaiz-section{
+width: 800px;
+
+padding: 20px 10px;
+/* width: 60%; */
+  background-color: white;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  height: 500px;
+
+
+    
+}
+
+.quaiz-section h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 6rem;
+    margin-left: 1rem;
+}
+
+#quiz .option_1 ,.option_2,.option_3,.option_4,li {
+margin-top: 0.4rem;
+/* margin: 10px; */
+}
+
+li{
+ border: 0.2rem solid rgb(242, 222, 222);
+ border-radius: 7rem;
+ padding: 0 7rem 0 3rem;
+
+ align-items: center;
+ -webkit-border-radius: 5rem;
+ -moz-border-radius: 5rem;
+ font-size: 1.1rem;
+ font-weight: bold;
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+
+
+}
+label{
+
+    align-items: center;
+    padding: 15px ;
+  
+   
+}
+  input[type = 'radio']{
+    width: 20px;
+    height: 20px;
+} 
+.btn{
+    padding:1rem 1rem ;
+   
+}
+button{
+  padding: 0 3rem; 
+  height: 3rem; 
+  border-radius: 5rem;
+  /* border: 4px solid white; */
+  border: none;
+  background:red;
+  color: white;
+  justify-content: flex-start;
+  
+}
+img{
+  width: 80%;
+border-radius: 20px;
+  /* margin: auto; */
+}
+.score{
+  color: red;
+  font-size: 1.5rem;
+}
+#result{
+  display: flex;
+  margin-left: 9rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+
+}
+#result p{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+  ul hr{
+margin-top: 1rem;
+
+
+ 
+}
+@media(max-width:768px){
+  .quaiz-section{
+    width: 100%;
+    padding: 20px 10px;
+      background-color: white;
+      display: flex;
+      justify-content: flex-start;
+      /* flex-direction: column; */
+      gap: 2rem;
+      height: 900px;
+    
+    
+        
+    }
+    #result p{
+      font-size: 2rem;
+    }
+}
